@@ -1,3 +1,20 @@
-html {
-    /*background-color: lavenderblush;*/
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    flex: 1;
+    width: 75%;
+    margin: 1rem auto;
+}
+
+#footer {
+    background-color: ghostwhite;
+    position:relative;
+    padding-top: 1rem;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }

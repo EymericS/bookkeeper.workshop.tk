@@ -1,28 +1,12 @@
 import React from "react"
-import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 
-export default function About({ data }) {
+export default function About() {
 
-  return (
-    <Layout>
-      <p>I’m good enough, I’m smart enough, and gosh darn it, people like me!</p>
-      <h1>About {data.site.siteMetadata.title}</h1>
-      <p>
-        We're the only site running on your computer dedicated to showing the
-        best photos and videos of pandas eating lots of food.
-      </p>
-    </Layout>
-  )
+	return (
+		<Layout>
+			<p>Test</p>
+		</Layout>
+	)
 }
-
-export const query = graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-    }
-`
