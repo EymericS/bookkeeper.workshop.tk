@@ -7,7 +7,8 @@
 module.exports = {
 	/* Reusable data for the site */
 	siteMetadata: {
-		title: `Pandas Eating Lots`,
+		title: `Shift Manager`,
+		author: 'Eymeric SERTGOZ'
 	},
 	/* Your site config here */
 	plugins: [

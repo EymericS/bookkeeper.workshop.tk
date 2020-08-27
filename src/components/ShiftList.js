@@ -2,8 +2,10 @@ import React from "react"
 
 import Table from "react-bootstrap/Table"
 import Box from "@chakra-ui/core/dist/Box"
+import Shift from "../script/shift"
 
-export default function shiftList( props ) {
+export default function shiftList({ shifts } ) {
+	shifts.map( shift => new Shift(shift) )
 
 	return (
 		<Box>
@@ -20,32 +22,17 @@ export default function shiftList( props ) {
 				</tr>
 				</thead>
 				<tbody>
-				<tr>
-					<td>1</td>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td colSpan="2">Larry the Bird</td>
-					<td>@twitter</td>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-				</tr>
+				{shifts.map( (shift) => (
+					<tr key={shift.id}>
+						<td>{shift.id}</td>
+						<td>{shift.start}</td>
+						<td>{shift.end}</td>
+						<td>{shift.locationName}</td>
+						<td>{shift.bonus}</td>
+						<td>{shift.earn}</td>
+						<td>EDIT / REMOVE</td>
+					</tr>
+				))}
 				</tbody>
 			</Table>
 		</Box>
