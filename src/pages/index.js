@@ -38,7 +38,7 @@ export default function IndexPage({ data }) {
 
 	return (
 		<Layout>
-			<ShiftCreator/>
+			<ShiftCreator  />
 			<ShiftList shifts={shifts}/>
 		</Layout>
 	)

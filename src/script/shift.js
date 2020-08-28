@@ -136,10 +136,8 @@ export default class Shift {
         switch( this.m_location ) {
             case SHIFT_LOCATION.PARTDIEU:
                 return "Gare Part-Dieu"
-                break
             case SHIFT_LOCATION.STEXUPERY:
                 return "Aéroport Lyon Saint Exupery"
-                break
             default:
                 return "Wrong shift location"
         }

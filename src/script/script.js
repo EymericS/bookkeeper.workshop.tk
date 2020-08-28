@@ -473,12 +473,6 @@ function save_perma_toLocalStorage() {
 
 
 
-
-
-
-
-
-
 function add_shiftToList( _shift ) {
     console.log( _shift );
     const htmlTableRow =

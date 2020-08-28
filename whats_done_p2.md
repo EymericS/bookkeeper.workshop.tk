@@ -10,3 +10,15 @@ npm install @chakra-ui/core @emotion/core @emotion/styled emotion-theming
 ```shell script
 npm install react-bootstrap bootstrap
 ```
+- install react-icon :
+```shell script
+ npm i react-icons --save
+```
+
+```shell script
+npm install @wojtekmaj/react-timerange-picker
+
+npm i antd
+
+npm i moment
+```
